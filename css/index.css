@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+
+body { font-family: '나눔고딕'; font-size: 16px; color: #333; }
+.row { max-width: 960px; margin: 0 auto; }
+
+
+#header { box-shadow: 0px 2px 3px #ddd; position: relative; z-index: 999; }
+#header img { float: left; width: 40%;}
+#header #nav { float: right; width: 60%; margin-top: 50px; }
+.depth1 > li { font-weight: 400; position:relative; float: left;  width: 33.33%; font-size: 16px;  margin-top: 30px; text-align: center; padding: 0px 0;}
+.depth1 > li > a { display: block; padding: 8px 0; }
+.depth1 > li:hover > a { background: #009688; color: #fff; }
+.depth2 { display: none; position: absolute; top: 100%; left:0; text-align: center; width: 100%; }
+.depth2 > li { line-height: 2; font-weight: 400; }
+.depth2 > li > a { display: block; background: rgba(255, 255, 255, 0.8); }
+.depth1 > li:hover > .depth2 { display:block; }
+.depth2 > li:hover > a { background: #009688; color: #fff; }
+
+
+#section .slide > div { position: relative; }
+.text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px 30px; border-radius: 20px; background: rgba(255, 255, 255, 0.8); text-align: center; }
+.text > h2 { font-weight: bold; font-size: 32px; margin-bottom: 15px;}
+.text > p { font-size: 26px; }
+#section .ntpt { padding: 20px 0; }
+#section .ntpt .partner h2 { font-size: 18px; font-weight: bold; text-align: center; padding-top: 10px;}
+#section .notice { float: left; width: 48%;}
+#section .notice h2 { font-weight: bold; font-size: 18px; padding-top: 10px; padding-bottom: 10px; text-align: center; }
+#section .notice th { font-weight: bold; border-top: 1px solid black; }
+#section .notice table { font-size: 12px; }
+.notice col:first-child { width: auto; }
+.notice col:last-child { width: 85px; }
+.notice table tbody tr:nth-child(2n+1) { background: lime; }
+.notice table td:nth-child(1) { white-space: nowrap; overflow: hidden;  text-overflow: ellipsis; }
+.notice table td:nth-child(2) { text-align: center; } 
+.notice table td, .notice table th { padding: 10px 8px; }
+#section .partner .inscom { text-align: center; margin-top: 15px; }
+#section .partner { float: right;  width: 48%;}
+#section .partner .inscom a:first-child > img { width: 50%; padding-right: 20px; }
+#section .partner .inscom a:last-child > img { width: 32%; } 
+#modal:target { display: block; }
+#modal { display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0, 0, 0, 0.6);  z-index: 999999;}
+#modal .inner { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 50px 20px;}
+#modal .inner a { display: block; background: #009688; width: 70px; height: 35px; line-height: 35px; border-radius: 7px; margin: 0px auto; margin-top: 40px; color: #fff; text-align: center; }
+.mainpjt { font-size: 18px; padding: 20px 0; line-height: 2.5; }
+.mainpjt p:nth-child(2) { text-align: center; }
+.mainpjt p:nth-child(3) { text-align: right; }
+.manual ul { overflow: hidden; }
+.manual li { float: left; width: 33.33%; text-align: center; padding: 30px 20px; }
+.manual li img { display: block; margin: 20px auto; }
+.manual li a { display: inline-block; padding: 15px 20px; background: #009688; color: #fff; font-size: 25px; border-radius: 15px; margin: 20px; }
+
+
+#footer { background: #009688; color: #fff;}
+#footer .tac { width: 50%; float: left; font-size: 18px; margin: 40px 0;}
+#footer .tac a {  padding: 0 15px;}
+#footer .address { width: 50%; float: right; font-size: 12px; margin: 20px 0; line-height: 1.5; font-family: '나눔고딕'; }
